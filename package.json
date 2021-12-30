@@ -1,0 +1,24 @@
+{
+  "name": "carrie-truman-static",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trumanshuck/carrie-truman-static.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trumanshuck/carrie-truman-static/issues"
+  },
+  "homepage": "https://github.com/trumanshuck/carrie-truman-static#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-img": "^1.0.0"
+  }
+}
