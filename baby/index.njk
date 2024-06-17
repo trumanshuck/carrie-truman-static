@@ -1,0 +1,157 @@
+---
+layout: main.njk
+---
+
+<section>
+  <h1 class="text-6xl font-bold font-title py-40 text-center text-gray-200 bg-no-repeat bg-center bg-cover" style="background-image:
+            linear-gradient(
+              rgba(0, 0, 0, 0.45),
+              rgba(0, 0, 0, 0.45)
+            ),
+            url({% imageUrl 'src/images/good-mews.jpeg' %})
+          ">
+    <div>Carrie & Truman</div>
+    <div>are having a baby</div>
+  </h1>
+
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="max-w-4xl mx-auto prose py-8 px-4">
+      <p class="text-2xl md:text-4xl text-center font-heading">
+        One new tiny human is expected in early October
+      </p>
+
+      <p class="text-xl">
+        We're pretty excited; Catballs and Tuuli will be too, but probably not until food starts getting dropped on the floor.  In the meantime we have some preparations to make, and a party to throw.
+      </p>      
+    </div>
+    <div class="max-w-4xl mx-auto prose py-8 px-4">
+      <p class="text-2xl md:text-4xl text-center font-heading">
+        Baby-Q on the afternoon of Sunday, July 28th
+      </p>
+
+      <p class="text-xl">
+        We've reserved a shelter at Riverside Park and are planning a chill hang-out with plenty of food and yard games.  We'd love it if you could join us.
+      </p>
+
+      <p class="text-xl">
+        Gifts are appreciated if that's part of your love language, but we'll be thrilled just to see you.  We love gently used stuff when possible (though probably not, like, the snot sucker) and have listed a few items in the registry below. 
+      </p>
+
+      <p class="text-xl">
+        We're having a "<strong>Display Shower</strong>" because we'd really rather spend the party hanging with you than unwrapping presents &mdash; and honestly because neither of us especially enjoy being the center of attention.  If you bring a gift, please leave it unwrapped.  We'll place them on a display table because folks (us included!) are excited to see all of the things that our baby will one day chew on.
+      </p>
+
+      <p class="text-2xl md:text-4xl text-center font-heading border-t pt-6">
+        Please RSVP
+      </p>
+
+      <form
+        id="baby-rsvp"
+        action="https://formspree.io/f/mqkrvbpe"
+        class="flex flex-col border-b mb-6"
+        method="POST"
+      >
+        <div class="md:flex flex-col md:items-center md:mx-auto w-full max-w-lg">
+          <div class="w-full mb-6 items-center">
+            <div class="w-full mb-6">
+              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="rsvp-name">
+                Name
+              </label>
+              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="rsvp-name" name="rsvp-name" type="text" placeholder="">
+            </div>
+            <div class="w-full flex flex-row mb-6 justify-around">
+              <div class="flex items-center ps-4 border border-gray-200 rounded dark:border-gray-700 w-1/2 px-4 mr-2">
+                <input checked id="rsvp-attending-1" type="radio" value="yes" name="rsvp-attending" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 mx-2">
+                  <label for="rsvp-attending-1" class="w-full py-4 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Attending</label>
+              </div>
+              <div class="flex items-center border border-gray-200 rounded dark:border-gray-700 w-1/2 ml-2">
+                <input id="rsvp-attending-2" type="radio" value="no" name="rsvp-attending" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 mx-2">
+                  <label for="rsvp-attending-2" class="w-full py-4 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Not attending</label>
+              </div>
+            </div>
+            <div class="w-full mb-6">
+              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="rsvp-number-of-folks">
+                Number of Folks
+              </label>
+              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="rsvp-number-of-folks" name="rsvp-number-of-folks" type="text" placeholder="">
+            </div>
+            <div class="w-full">
+              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="rsvp-restrictions-notes">
+                Dietary restrictions or other notes
+              </label>
+              <textarea rows=4 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="rsvp-restrictions-notes" name="rsvp-restrictions-notes" type="text" placeholder=""></textarea>
+            </div>
+          </div>
+          <div class="md:flex md:items-center w-full">
+            <button class="shadow bg-dark hover:bg-gray-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded w-full" type="submit">
+              Submit RSVP
+            </button>
+          </div>
+        </div>
+        <div class="md:flex md:items-center md:mx-auto">
+          <p id="baby-rsvp-status" class="my-0 py-0"></p>
+        </div>
+      </form>
+
+      <div class="flex flex-col md:flex-row border-b pb-12">
+        <div class="md:w-1/2 pr-2 mt-8">
+          <div class="text-4xl">When</div>
+          <div class="text-xl">Sunday, July 28th from 12pm - 3pm</div>
+          <div class="text-4xl">Where</div>
+          <div class="text-xl">Riverside Park, Island Shelter</div>
+          <div class="text-4xl">Directions</div>
+          <div>Enter park at Guild St NW / Monroe Ave NE, follow all the way to the end (straight, then right, shelter will be at north end near public restroom)</div>
+          <div class="text-4xl">Registry</div>
+          <div class="text-2xl">
+            <a href="https://withjoy.com/carriesbabyregistry/registry" target=_blank>
+              Hosted here on WithJoy
+            </a>
+          </div>
+        </div>
+        <div class="md:w-1/2 pl-2">
+          <img class="my-0" src="{% imageUrl 'src/images/riverside.png' %}" />
+        </div>
+      </div> 
+
+      <div class="text-2xl md:text-4xl text-center font-heading mt-6 mb-0 pb-0">
+        Hope to see you there!
+      </div>
+      <div class="text-lg text-center font-heading mt-0 pt-0 pb-48">
+        Please shoot us a text message with any questions
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  var form = document.getElementById("baby-rsvp");
+  
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("baby-rsvp-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        status.innerHTML = "Thanks!  Can't wait to see you!";
+        form.reset()
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+          } else {
+            status.innerHTML = "Oops! There was a problem.  Please try again."
+          }
+        })
+      }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem.  Please try again."
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
+</script>
